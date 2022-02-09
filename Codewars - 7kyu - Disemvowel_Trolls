@@ -10,21 +10,23 @@ function disemvowel(str) {
   let arr = [];
   
   for (let i = 0; i < arrStr.length; ++i) {
-    if(arrStr[i] != "a" ||
-      arrStr[i] != "A" ||
-      arrStr[i] != "e" ||
-      arrStr[i] != "E" ||
-      arrStr[i] != "i" ||
-      arrStr[i] != "I" ||
-      arrStr[i] != "o" ||
-      arrStr[i] != "O" ||
-      arrStr[i] != "u" ||
+    if(arrStr[i] != "a" &&
+      arrStr[i] != "A" &&
+      arrStr[i] != "e" &&
+      arrStr[i] != "E" &&
+      arrStr[i] != "i" &&
+      arrStr[i] != "I" &&
+      arrStr[i] != "o" &&
+      arrStr[i] != "O" &&
+      arrStr[i] != "u" &&
       arrStr[i] != "U") {
       arr.push(arrStr[i]);
     }
   }
   
-  return str;
+  let stringArray = arr.join('');
+  
+  return stringArray;
 }
 
 // Test
@@ -42,5 +44,18 @@ function disemvowel(str) {
 
 // Other Solutions
 /*
+  function disemvowel(str) {
+    return str.replace(/[aeiou]/gi, '');
+  }
+*/
 
+// Other Solutions v2
+/*
+  function disemvowel(str) {
+    var vowels = ['a', 'e', 'i', 'o', 'u'];
+
+    return str.split('').filter(function(el) {
+      return vowels.indexOf(el.toLowerCase()) == -1;
+    }).join('');
+  }
 */
