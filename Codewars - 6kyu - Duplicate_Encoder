@@ -8,8 +8,23 @@
 // "(( @"     =>  "))(("
 
 function duplicateEncode(word){
-    // ...
+  let chars=[...word.toLowerCase()];
+  let duplicateList = chars.filter((char,index,chars)=>chars.indexOf(char)!==index);
+  let duplicateSet = new Set(duplicateList);
+  let uniqueDuplicateList = [...duplicateSet];
+  let stringReturn = "";
+  
+  for(let i = 0; i < chars.length; ++i) {
+    if(uniqueDuplicateList.includes(chars[i])) {
+      stringReturn += ")";
+    }else{
+      stringReturn += "(";
+    }
+  }
+  
+  return stringReturn;
 }
+
 
 // Test
 /*
@@ -29,5 +44,32 @@ function duplicateEncode(word){
 
 // Other Solutions
 /*
+    function duplicateEncode(word){
+      return word
+        .toLowerCase()
+        .split('')
+        .map( function (a, i, w) {
+          return w.indexOf(a) == w.lastIndexOf(a) ? '(' : ')'
+        })
+        .join('');
+    }
+*/
 
+// Other Solutions v2
+/*
+    function duplicateEncode(word){
+        var unique='';
+        word = word.toLowerCase();
+        
+        for(var i=0; i<word.length; i++){
+            if(word.lastIndexOf(word[i]) == word.indexOf(word[i])){
+                unique += '(';
+            }
+            else{
+                unique += ')';
+            }
+        }
+
+        return unique;
+    }
 */
