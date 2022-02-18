@@ -18,4 +18,4 @@ Instagram
 Udemy
 ----
 - Thanks to my company i got the course
-- https://www.udemy.com/share/102aFs3@-UqbOGYmA3NmcZ-QeSYDAEeW6-CGY5dGsVGs9Ye28OZdnGY_KEB575j0uHgln9Yt5w==/
+- "Modernes JavaScript (ES6): jQuery, node.js, und viel Praxis!"
