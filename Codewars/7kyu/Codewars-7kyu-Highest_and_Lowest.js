@@ -1,7 +1,9 @@
-// ToDo
-// In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
-// Example
-//highAndLow("1 9 3 4 -1 -5 -3 5"); -> "9 -5"
+/*
+---ToDo---
+In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
+---Example---
+highAndLow("1 9 3 4 -1 -5 -3 5"); -> "9 -5"
+*/
 
 function highAndLow(numbers) {
     const arr = numbers.split(" ");

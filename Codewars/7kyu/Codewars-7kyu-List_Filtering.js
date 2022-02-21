@@ -1,7 +1,9 @@
-// ToDo
-// In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
-// Example
-// filter_list([1,2,'aasf','1','123',123,'abc']) -> [1,2,123]
+/*
+---ToDo---
+In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
+---Example---
+filter_list([1,2,'aasf','1','123',123,'abc']) -> [1,2,123]
+*/
 
 function filter_list(l) {
   let arr = [];
