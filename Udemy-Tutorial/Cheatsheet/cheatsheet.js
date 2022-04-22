@@ -91,5 +91,12 @@ window.addEventListener("load", function() {
     // Code wird ausgeführt wenn die Seite geladen vollständig geladen wurde.
 }, false)
 
-/* 13. xxx */
+/* 13. In einem String einen Teilstring ersetzen. */
+// String erstellen.
+let testString = "Hallo Welt";
+// Welt durch Mars ersetzen.
+testString.replace("Welt", "Mars");
+//Ausgabe ist dann "Hallo Mars"
+
+/* 14. xxx */
 //
