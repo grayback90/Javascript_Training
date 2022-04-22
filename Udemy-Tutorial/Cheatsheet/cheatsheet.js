@@ -29,6 +29,8 @@ setInterval(func, X);
 /* 6. Zugriff auf Element aus dem HTML */
 // Über die ID.
 document.getElementById("id");
+//Wert des Elements bekommen.
+document.getElementById("id").value;
 // Über den Klassennamen.
 document.getElementsByClassName("ClassName");
 // Über den Tagnamen.
