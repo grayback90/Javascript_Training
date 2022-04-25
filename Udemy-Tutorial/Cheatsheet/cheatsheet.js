@@ -134,4 +134,43 @@ arrayArray[0][0] // <-- Erstes Array, erstes Element.
 arrayArray[1][1] // <-- zweites Array, zweites Element
 
 /* 18. if-Anweisung */
+// Aufbau der Anweisung
+if("Bedingung") {
+    // Code der ausgeführt werden soll.
+}else if("andere Bedingung") {
+    // Anderer Code der ausgeführt werden soll.
+}else{
+    // Code der sonst ausgeführt wird.
+};
+
+/* 19. Booleansverknüpfung */
+// && <-- UND
+// || <-- ODER
+
+/* 20. Vergleichsoperatoren */
+// a < b <-- a kleiner b
+// a <= b <-- a kleiner/gleich b
+// !(a < 15) <-- Wenn nicht (a < 15)
+// a == b <-- a ist gleich b
+// arrayPersonen.indexOf("Erik") <-- Gibt den Index des Wertes im Array zurück.
+
+/* 21. While-Anweisung */
+// Wird genutzt wenn wir nicht wissen wie oft wir die Schleife wiederholen.
+while(arrayArray.arrayPersonen.lengt < 20) {
+    // Code wird solange ausgeführt bis Bedingung erreicht ist.
+};
+
+/* 22. For-Anweisung */
+// Wenn wir wissen wie oft wir eine Schleife durchlaufen.
+for(let i = 1; i <= arrayPersonen.length; i++) {
+    // Code der ausgeführt werden soll.
+};
+
+/* 23. Break & Continue */
+// Break bricht eine Schleife an einer bestimmten Stelle ab. Kann man mit if-Anweisung gut steuern.
+// ^-- Bricht die komplette Schleife ab!
+// Continue überspringt einen Schleifendurchlauf. Gut mit if-Anweisung steuerbar.
+// ^-- Bricht nur den aktuellen Durchlauf ab und startet den nächsten Durchlauf.
+
+/* 24. xxx */
 // 
