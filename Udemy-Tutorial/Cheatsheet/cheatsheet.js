@@ -98,5 +98,40 @@ let testString = "Hallo Welt";
 testString.replace("Welt", "Mars");
 //Ausgabe ist dann "Hallo Mars"
 
-/* 14. xxx */
-//
+/* 14. Arrays */
+// Array erstellen.
+let arrayPersonen = ["Paula", "Erik", "Julia", "Max"];
+let arrayNumbers = [123, 345, 45 + 2];
+let arrayLeer = [];
+// Array um einen Wert erweitern.
+arrayPersonen.push("Monika"); // <-- Ans Ende des Arrays.
+arrayPersonen.unshift("Kai"); // <-- An den Anfang des Arrays.
+// Element eines Arrays entfernen.
+arrayPersonen.pop(); // <-- Letztes Element entfernen.
+arrayPersonen.shift(); // <-- Erstes Element entfernen.
+
+/* 15. Array-Operationen */
+// Anzahl der Elemente in einem Array.
+arrayPersonen.length;
+// Zugriff auf ein bestimmtes Element im Array
+arrayPersonen[0]; // <-- 1.Element
+arrayPersonen[1]; // <-- 2.Element 
+
+/* 16. Schleifen (for ... of) */
+// Über jedes Element gehen und eine Aktion ausführen.
+for (let persons of arrayPersonen) { 
+    console.log(persons); 
+};
+
+/* 17. Mehrdimensionale Arrays */
+// Array von Arrays
+let arrayArray = [
+    ["Andreas", "Kai"],
+    [12345, 56789]
+];
+// Elemente aus dem Array auslesen.
+arrayArray[0][0] // <-- Erstes Array, erstes Element.
+arrayArray[1][1] // <-- zweites Array, zweites Element
+
+/* 18. if-Anweisung */
+// 
