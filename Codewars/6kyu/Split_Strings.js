@@ -24,32 +24,32 @@ function solution(str){
 
 // Test
 /*
-const { assert } = require('chai');
+  const { assert } = require('chai');
 
-describe("Split Strings", () => {
-  it("Basic tests", () => {
-    assert.deepEqual(solution("abcdef"), ["ab", "cd", "ef"]);
-    assert.deepEqual(solution("abcdefg"), ["ab", "cd", "ef", "g_"]);
-    assert.deepEqual(solution(""), []);
+  describe("Split Strings", () => {
+    it("Basic tests", () => {
+      assert.deepEqual(solution("abcdef"), ["ab", "cd", "ef"]);
+      assert.deepEqual(solution("abcdefg"), ["ab", "cd", "ef", "g_"]);
+      assert.deepEqual(solution(""), []);
+    });
   });
-});
 */
 
 // Other Solutions
 /*
-function solution(s){
-   return (s+"_").match(/.{2}/g)||[]
-}
+  function solution(s){
+    return (s+"_").match(/.{2}/g)||[]
+  }
 */
 
 // Other Solutions v2
 /*
-function solution(str){
-  arr = [];
-  for(var i = 0; i < str.length; i += 2){
-    second = str[i+1] || '_';
-    arr.push(str[i] + second);
+  function solution(str){
+    arr = [];
+    for(var i = 0; i < str.length; i += 2){
+      second = str[i+1] || '_';
+      arr.push(str[i] + second);
+    }
+    return arr;
   }
-  return arr;
-}
 */
